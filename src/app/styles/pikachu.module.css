@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pikachu {
+    border-radius: 70%;
+}

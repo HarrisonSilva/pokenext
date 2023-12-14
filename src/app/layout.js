@@ -1,7 +1,6 @@
-import { Inter } from 'next/font/google'
+import Footer from '../app/components/Footer'
+import NaviBar from '../app/components/NavBar'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +10,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <link rel='shortcut icon' href='/images/favicon.ico' />
+    <title>PokeNext</title>
+      <body suppressHydrationWarning={true}>
+        <NaviBar />
+        <main style={{ minHeight: '70vh'} }> {children} </main>
+        <Footer />
+        </body>
     </html>
   )
 }
