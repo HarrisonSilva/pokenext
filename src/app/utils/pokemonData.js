@@ -16,7 +16,7 @@ export const getPokemon = async (id) => {
                 icon: 'question',
                 confirmButtonText: 'Entendi'
               })
-            redirect('/login')
+            redirect('/')
         }
     } catch (error) {
        
