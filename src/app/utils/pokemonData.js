@@ -10,10 +10,10 @@ export const getPokemon = async (id) => {
             return data;
         } else {
             Swal.fire({
-                title: 'Problema na Api',
-                text: 'Estamos com Problemas, volte mais tarde!',
-                icon: 'error',
-                confirmButtonText: 'Continuar'
+                title: 'Parametro Incorreto',
+                text: 'Certifique-se de esta passando o parametro correto!',
+                icon: 'question',
+                confirmButtonText: 'Entendi'
               })
         }
     } catch (error) {
