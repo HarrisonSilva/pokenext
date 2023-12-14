@@ -12,6 +12,10 @@
     padding: 0.1em
 }
 
+.title::first-letter {
+    text-transform: uppercase;
+}
+
 .paragraph {
     text-align: center;
 }
