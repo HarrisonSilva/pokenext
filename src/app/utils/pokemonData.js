@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation'
 import Swal from 'sweetalert2'
 
 export const getPokemon = async (id) => {
@@ -15,6 +16,7 @@ export const getPokemon = async (id) => {
                 icon: 'question',
                 confirmButtonText: 'Entendi'
               })
+            redirect('/login')
         }
     } catch (error) {
        
